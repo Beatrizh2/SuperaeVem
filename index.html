@@ -42,7 +42,6 @@
             box-shadow: 0 16px 48px 0 #ff9800cc, 0 1.5px 8px #4caf50 inset;
         }
 
-        /* Área da logo com personagens */
         .logo-area {
             display: flex;
             align-items: center;
@@ -74,7 +73,6 @@
             height: auto;
         }
 
-        /* Personagem sentado no canto inferior direito */
         .personagem-sentado {
             position: absolute;
             right: 0;
@@ -189,7 +187,6 @@
             margin-right: 6px;
         }
 
-        /* Div de confirmação */
         #confirmacao {
             display: none;
             text-align: center;
@@ -268,7 +265,6 @@
                 </div>
             </form>
 
-            <!-- Div de confirmação -->
             <div id="confirmacao">
                 <img src="https://i.postimg.cc/FKX1G5J1/Inscri-o-feita-com-sucesso.gif"
                     alt="Inscrição feita com sucesso">
@@ -298,13 +294,6 @@
                         // Esconde formulário e mostra confirmação
                         form.style.display = "none";
                         confirmacao.style.display = "block";
-
-                        // Depois de 5 segundos, volta para a tela inicial
-                        setTimeout(() => {
-                            confirmacao.style.display = "none";
-                            form.reset();
-                            form.style.display = "block";
-                        }, 5000);
                     } else {
                         alert("Erro: " + data.message);
                     }
